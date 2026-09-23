@@ -1,47 +1,46 @@
-# JAS Hospital Management System
+# JAS · Hospital Management System
 
-This project simulates a hospital system that manages patient data and emergency treatment using C++.  
-It utilizes multiple data structures such as arrays, linked lists, stacks, queues, and **priority queues (bonus)**.
+**C++ · Data structures · Console application**
 
----
+A hospital simulation that connects data structures to practical tasks: storing patient records, prioritizing emergency cases, and undoing the most recent treatment entry.
 
-## 🏥 Features
+[View the source](main.cpp) · [Project documentation](https://sites.google.com/view/jashospital/home)
 
-- Add, delete, and display patients using **arrays** and **linked lists**
-- Handle emergency patients using a **priority queue** (based on condition severity)
-- Track treatments and undo them using a **stack**
-- Display all current patient records
+## How it works
 
----
+| Feature | Data structure | Behavior |
+| --- | --- | --- |
+| Patient records | Array + linked list | Stores the first 100 patients in an array, then additional patients in a linked list |
+| Emergency handling | Priority queue | Processes patients according to the program's condition-based priority |
+| Treatment history | Stack | Records treatments and removes the latest entry when undo is selected |
 
-## 🛠 How to Run
+The menu supports adding, viewing, and deleting patients, handling emergencies, and recording or undoing treatments. Data is held in memory during the session.
 
-Compile and run the code using any C++ compiler:
+## Run locally
+
+With a C++11-compatible compiler or newer:
 
 ```bash
-g++ main.cpp -o hospital
+git clone https://github.com/iiYARA/jas-hospital-management.git
+cd jas-hospital-management
+g++ -std=c++11 main.cpp -o hospital
 ./hospital
 ```
 
----
+On Windows, compile to `hospital.exe` and run `.\hospital.exe` in PowerShell.
 
-## 👩‍💻 Team Members
+## Team contributions
 
-| Name             | ID         | Role                                |
-|------------------|------------|-------------------------------------|
-| Asma Alsakkaf    | S21107405  | Array part and edited portfolio     |
-| Judy Alimam      | S23108505  | Linked lists, queue, and portfolio  |
-| Yara Mohammad    | S22107856  | Stack and GitHub management         |
+| Member | Contribution |
+| --- | --- |
+| Asma Alsakkaf | Array implementation and documentation portfolio edits |
+| Judy Alimam | Linked lists, queue, and documentation portfolio |
+| Yara Mohammad | Stack implementation and GitHub management |
 
----
+## Course
 
-## 🌐 Documentation Portfolio
+Data Structures and Algorithms · Effat University  
+Instructor: Dr. Naila Marir · Submitted April 30, 2025
 
-[🔗 Google Site Link](https://sites.google.com/view/jashospital/home)
+This is an educational simulation; emergency priorities are simplified program rules.
 
----
-
-Effat University  
-Course: Data Structures and Algorithms  
-Instructor: Dr. Naila Marir  
-Submission Date: April 30, 2025.
